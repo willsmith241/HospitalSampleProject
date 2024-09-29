@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'hospital.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hospitals',
-        'USER':'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'smith142$my_table',
+        'USER':'smith142',
+        'HOST': 'smith142.mysql.pythonanywhere-services.com',
+        'PASSWORD':'python123',
+        
 
     }
 }
