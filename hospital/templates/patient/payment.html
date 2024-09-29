@@ -1,0 +1,21 @@
+<!-- stripe_payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Payment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Confirm Payment for Appointment</h2>
+    <p>You are about to book an appointment with {{ appointment.id }}</p>
+    <form method="post" id="payment-form">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success">Pay Now</button>
+    </form>
+</div>
+</body>
+</html>
+
